@@ -47,9 +47,29 @@ namespace IndyBooks.Controllers
           * Author Creation and List
           * TODO: Develop methods and Views to create and list Authors 
           */
+        public ActionResult AddAuthor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddAuthor(Author author)
+        {
+            return View();
+        }
         /*
           * Member Creation and List
           * TODO: Develop methods and Views to create and list Members 
           */
+        public ActionResult AddMembers()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddMembers(Member member)
+        {
+            return View();
+        }
     }
 }

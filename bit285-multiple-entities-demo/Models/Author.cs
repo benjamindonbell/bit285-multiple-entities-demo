@@ -11,7 +11,12 @@ namespace IndyBooks.Models
 
         // TODO: Create at least three  appropriate properties
 
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Genre { get; set; }
+
         // TODO: Add Property to represent the entity relationship: "An Author can write many Books"
 
+        public virtual ICollection<Book> WrittenBooks { get; set; }
     }
 }

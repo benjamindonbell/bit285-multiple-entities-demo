@@ -141,6 +141,14 @@
     <Compile Include="Migrations\201802192330219_purchase.Designer.cs">
       <DependentUpon>201802192330219_purchase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802202306307_newMigration.cs" />
+    <Compile Include="Migrations\201802202306307_newMigration.Designer.cs">
+      <DependentUpon>201802202306307_newMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802202317237_addedBooks.cs" />
+    <Compile Include="Migrations\201802202317237_addedBooks.Designer.cs">
+      <DependentUpon>201802202317237_addedBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -162,6 +170,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Purchase.cshtml" />
     <Content Include="Views\Home\Purchases.cshtml" />
+    <Content Include="Views\Home\Books.cshtml" />
+    <Content Include="Views\Home\AddMembers.cshtml" />
+    <Content Include="Views\Home\Members.cshtml" />
+    <Content Include="Views\Home\Authors.cshtml" />
+    <Content Include="Views\Home\AddAuthor.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802192330219_purchase.resx">
       <DependentUpon>201802192330219_purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802202306307_newMigration.resx">
+      <DependentUpon>201802202306307_newMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802202317237_addedBooks.resx">
+      <DependentUpon>201802202317237_addedBooks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

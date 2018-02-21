@@ -62,17 +62,33 @@ namespace bit285_multiple_entities_demo.Migrations
 
                 });
             //TODO: Add several Author records
-
+            context.Authors.AddOrUpdate(a => a.AuthorID,
+                 new Author()
+                 {
+                     AuthorID = 1,
+                     FirstName = "Mark",
+                     LastName = "Twain",
+                     Genre = "Fiction"
+                 });
             //TODO: Add several Member records
-
+            context.Members.AddOrUpdate(m => m.MemberID,
+                 new Member()
+                 {
+                     MemberID = 1,
+                     FirstName = "Ben",
+                     LastName = "Bell",
+                     Email = "benjamindonbell"
+                 });
             //TODO: Add additional Purchase records
             context.Purchases.AddOrUpdate(p => p.PurchaseID,
                 new Purchase()
                 {
                     PurchaseID = 1,
                     Amount = 10.00M,
-                    BookID = 6
+                    BookID = 6,
+
                     //TODO: Add the MemberID value
+                    MemberID = 1
                 });
 
         }
